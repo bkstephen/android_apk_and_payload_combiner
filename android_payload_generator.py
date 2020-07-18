@@ -3,7 +3,7 @@ from colorama import Fore, Back, Style
 
 print(Fore.CYAN+Back.WHITE + Style.BRIGHT + "\n\n     Android Payload APK Payload Generator")
 print(Fore.CYAN+Back.WHITE + Style.BRIGHT + "     Hide an msfconsole reverse tcp shell payload in an existing apk application")
-print(Fore.MAGENTA+Back.WHITE + Style.BRIGHT + "        made by Stephanos Bekiaris    ver: July 2020\n")
+print(Fore.MAGENTA+Back.WHITE + Style.BRIGHT + "        made by bkstephen    ver: July 2020\n")
 
 print(Fore.RED+Back.WHITE + Style.BRIGHT + "Requirements: \n" + Style.RESET_ALL)
 print(Fore.BLUE + Style.BRIGHT + "1. msfvenom: for generating the payload")
