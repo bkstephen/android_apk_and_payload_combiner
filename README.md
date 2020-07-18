@@ -1,7 +1,7 @@
 ## Android apk and payload combiner
 # A small python script that uses msfvenom to hide a tcp reverse shell to an android device inside an APK file
 
-Hide an msfconsole reverse tcp shell payload in an existing apk application, made by Stephanos Bekiaris    ver: July 2020
+Hide an msfconsole reverse tcp shell payload in an existing apk application, made by bkstephen    ver July 2020
         
     
 # Requirements:
