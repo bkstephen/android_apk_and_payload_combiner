@@ -13,7 +13,7 @@ Hide an msfconsole reverse tcp shell payload in an existing apk application, mad
   
 **Step 1: Run the script (preferably as root): sudo python3 android_payload_generator.py**
 
-**Step 2: Once the payload is generated, send it to the victim android to run it.**
+**Step 2: Once the payload is generated, send it to the victim android device to run it.**
 
 **Step 3: Make sure you have initialized an msfconsole session using the following commands:**
 
